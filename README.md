@@ -1,1 +1,0 @@
-Monika Karawan Curriculum Vitae
