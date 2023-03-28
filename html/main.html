@@ -8,49 +8,124 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/style/css/navbar.css" />
     <link rel="stylesheet" href="/style/css/style.css" />
-    <title>Monika Karawan CV</title>
+    <link rel="stylesheet" href="/style/css/exp.css" />
+    <title>🐍🐍🐍🐍🐍🐍</title>
 </head>
 <body>
 
         <!------------------- NAVBAR --------------------->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Curriculum vitae</label>
-            <ul>
-                <li><a href="#start">Start</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#exp">Experience</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="hobby">Hobby</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Curriculum vitae</label>
+        <ul>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="hobby">Hobby</a></li>
+        </ul>
+    </nav>
         <!------------------- END OF NAVBAR --------------------->
     <!-------------------- WELCOME --------------->
-        <section class="welcome">
+    <section class="welcome">
         <div class="grid">
-        <div class="left column" style=" background-image: url('/style/images/tlo-welcome.png')">
-            <p>Hello - l</p>
-        </div>
+            <div class="left column" style=" background-image: url('/style/images/tlo-welcome.png')">
+                <div class="container">
+                    <img src="/style/images/me.jpg" class="photo_of_me">
+                    <h2>Monika Karawan</h2>
+                    <p>Computer Science Student</p>
+                    <button> Email me</button>
+                    <div class="social_media">
+                        <a href="https://github.com/mkarawan" /><img src="/style/images/git.png" alt="github-link" ></a>
+                        <a href="https://www.linkedin.com/in/mkarawan/"><img src="/style/images/in.png" alt="linkedin-link"></a>
+                    </div>
+                </div>
+            </div>
         <div class="right column">
-            <p>Hello - r</p>
+            <div class="container about_me">
+                <h2>About me</h2>
+                <p>I am a third year computer science student. I really want to boarden my knowledge and increase my
+                    skills in the field of IT.<br>
+                    🐍I have completed Python Developer Course and I am constantly expanding my knowledge.<br>
+                    💻I'm looking for a job where I can learn a lot and develop my skills.</p>
+                <button>Download resume</button>
+            </div>
+
         </div>
         </div>
     </section>
 
 <!------------------------SKILLS------------------------>
     <div class="skills" style="    background-image: url('/style/images/skills-tlo.png');">
+        <div class="skills-title">
+    <h1>Skills</h1>
+        </div>
+        <div class="skills-list-col">
+            <h4>Technical</h4>
+                <li><img src="../style/images/programming-language.png" height="40" width="40"/><p>HTML</p></li>
+                <li><img src="../style/images/css.png"  height="40" width="40"/><p>CSS</p></li>
+                <li><img src="../style/images/python (1).png"  height="40" width="40"/><p>Python, Django</p></li>
+                <li><img src="../style/images/sql-server.png"  height="40" width="40"/><p>SQL</p></li>
+            <li><img src="../style/images/programming-language (1).png"  height="40" width="40"/><p>MS Office</p></li>
+        </div>
+        <div class="skills-list-col">
+            <h4>Soft</h4>
+            <li><img src="../style/images/listening-icon-17.jpg"  height="40" width="40"/><p>Active listening</p></li>
+            <li><img src="../style/images/puzzle.png"  height="40" width="40"/><p>Problem solving</p></li>
+            <li><img src="../style/images/work.png"  height="40" width="40"/><p>Work motivation</p></li>
+            <li><img src="../style/images/library.png" height="40" width="40"/><p>English - B1</p></li>
+        </div>
 
     </div>
 
 <!--------------------------EXPERIENCE ------------------------>
     <div class="exp">
+
+            <h1>Experience</h1>
+        <div class="timeline-section">
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"><p>09.2021 - 02.2022</p></div>
+                    <div class="timeline-content">  <h3>Customer advisor · Family Optic Wrocław</h3>
+                        <p>Taking care of the appearance of the optician</p>
+                        <p>Providing professional help in choosing frames, glasses and contact lenses</p>
+                    </div></div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"><p>04.2021 - 07.2021</p></div>
+                    <div class="timeline-content">
+                        <h3>Customer advisor · Leroy Merlin Wrocław</h3>
+
+                        <p>Providing professional assistance in choosing the assortment</p>
+                        <p>Striving to increase the income of my section of the store</p></div></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"><p>08.2020 - 10.2020</p></div>
+                    <div class="timeline-content"><h3>Assistant store manager · Delikatesy Centrum Wałbrzych</h3>
+
+                        <p>Work planning and supervising</p>
+                        <p>Responsibility for orders and trading actions</p></div></div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"><p>10.2018 - 08.2020</p></div>
+                    <div class="timeline-content"><h3>Store employee · Delikatesy Centrum Lubawka/Wałbrzych</h3>
+
+                        <p>Taking care of exposition of goods</p>
+                        <p>Active selling</p></div></div></div>
+        </div>
 
     </div>
 <!--------------------EDUCATION ----------------------------->
@@ -58,6 +133,8 @@
 
     </div>
 <!-----------------FOOTER-------------------------->
-<footer>    </footer>
+<footer>
+    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Alfredo Creates - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Alfredo Creates - Flaticon</a></footer>
 </body>
 </html>
