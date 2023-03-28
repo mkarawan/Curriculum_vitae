@@ -1,0 +1,38 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    background-color: #D1DCE6;
+}
+.left{
+    background-size: cover;
+    }
+.column{
+    height: 95vh;
+}
+.skills{
+    height: 80vh;
+    background-size: cover;
+}
+.exp{
+    background-color: #D1DCE6;
+    height: 100vh;
+}
+.edu{
+    height: 70vh;
+    background-size: cover;
+}
+footer{
+    height: 60px;
+    background-color: #D1DCE6;
+}
