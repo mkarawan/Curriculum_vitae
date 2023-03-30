@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Inter:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/style/css/navbar.css" />
     <link rel="stylesheet" href="/style/css/style.css" />
@@ -18,30 +18,31 @@
 <body>
 
         <!------------------- NAVBAR --------------------->
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Curriculum vitae</label>
-        <ul>
-            <li><a href="#start">Start</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#exp">Experience</a></li>
-            <li><a href="#edu">Education</a></li>
-            <li><a href="hobby">Hobby</a></li>
-        </ul>
-    </nav>
+        <header>
+            <p></p>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">Menu</label>
+            <nav class="navbar">
+                <ul>
+                    <li><a>Start</a></li>
+                    <li><a>Skills</a></li>
+                    <li><a>Education</a></li>
+                    <li><a>Experience</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
         <!------------------- END OF NAVBAR --------------------->
     <!-------------------- WELCOME --------------->
     <section class="welcome">
         <div class="grid">
-            <div class="left column" style=" background-image: url('/style/images/tlo-welcome.png')">
+            <div class="left column">
                 <div class="container">
                     <img src="/style/images/me.jpg" class="photo_of_me">
                     <h2>Monika Karawan</h2>
-                    <p>Computer Science Student</p>
-                    <button> Email me</button>
+                    <p class="study">Computer Science Student</p>
+
                     <div class="social_media">
                         <a href="https://github.com/mkarawan" /><img src="/style/images/git.png" alt="github-link" ></a>
                         <a href="https://www.linkedin.com/in/mkarawan/"><img src="/style/images/in.png" alt="linkedin-link"></a>
@@ -53,9 +54,9 @@
                 <h2>About me</h2>
                 <p>I am a third year computer science student. I really want to boarden my knowledge and increase my
                     skills in the field of IT.<br>
-                    🐍I have completed Python Developer Course and I am constantly expanding my knowledge.<br>
+                    🐍I love programming, computer games and to train my dog.<br>
                     💻I'm looking for a job where I can learn a lot and develop my skills.</p>
-                <button>Download resume</button>
+                <button>Download resume</button><button> Email me</button>
             </div>
 
         </div>
@@ -63,28 +64,44 @@
     </section>
 
 <!------------------------SKILLS------------------------>
-    <div class="skills" style="    background-image: url('/style/images/skills-tlo.png');">
-        <div class="skills-title">
+    <div class="skills">
+        <div class="title">
     <h1>Skills</h1>
         </div>
-        <div class="skills-list-col">
+        <div class="two-column">
+        <div class="list-col">
             <h4>Technical</h4>
+            <ol>
                 <li><img src="../style/images/programming-language.png" height="40" width="40"/><p>HTML</p></li>
                 <li><img src="../style/images/css.png"  height="40" width="40"/><p>CSS</p></li>
                 <li><img src="../style/images/python (1).png"  height="40" width="40"/><p>Python, Django</p></li>
                 <li><img src="../style/images/sql-server.png"  height="40" width="40"/><p>SQL</p></li>
             <li><img src="../style/images/programming-language (1).png"  height="40" width="40"/><p>MS Office</p></li>
+            </ol>
         </div>
-        <div class="skills-list-col">
+        <div class="list-col">
             <h4>Soft</h4>
+            <ol>
             <li><img src="../style/images/listening-icon-17.jpg"  height="40" width="40"/><p>Active listening</p></li>
             <li><img src="../style/images/puzzle.png"  height="40" width="40"/><p>Problem solving</p></li>
             <li><img src="../style/images/work.png"  height="40" width="40"/><p>Work motivation</p></li>
             <li><img src="../style/images/library.png" height="40" width="40"/><p>English - B1</p></li>
-        </div>
+            </ol>
+        </div></div>
 
     </div>
-
+        <div class="edu">
+            <div class="title">
+                <h1>Education</h1>
+            </div>
+            <div class="list-col">
+                <li><p>10.2020 - 02.2024</p><h4>Computer Science</h4></li>
+                <li><p></p><h5>Mobile application engineer</h5></li>
+                <li><p></p><h6>WSB Universities in Wrocław</h6></li>
+                <li><p>02.2022 - 05.2022</p><h4>Python Developer Course</h4></li>
+                <li><p></p><h6>CodersLab - IT school</h6></li>
+            </div>
+        </div>
 <!--------------------------EXPERIENCE ------------------------>
     <div class="exp">
 
@@ -129,12 +146,13 @@
 
     </div>
 <!--------------------EDUCATION ----------------------------->
-    <div class="edu" style="background-image: url('/style/images/edu-tlo.png')">
 
-    </div>
 <!-----------------FOOTER-------------------------->
 <footer>
-    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Alfredo Creates - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Alfredo Creates - Flaticon</a></footer>
+<br />
+    <p>&#169; 2023 Created by Monika Karawan</p>
+    <p>All icons made by me</p>
+    <br />
+</footer>
 </body>
 </html>

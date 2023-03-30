@@ -4,20 +4,24 @@ html{
 body{
     margin: 0;
     padding: 0;
-
+    color: #422815;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: center;
+    background-color: #F8CBAB;
 }
 .right{
-    background-color: #D1DCE6;
+    background-color: #F8CBAB;
     display: flex;
+    padding-right: 130px;
+    padding-top: 40px;
 }
 .left{
-    background-size: cover;
+    padding-left: 120px;
+    background-color: #F8CBAB;
     display: flex;
     text-align: center;
     }
@@ -32,30 +36,23 @@ body{
     width: 215px;
 }
 .column{
-    height: 95vh;
+    height: 100vh;
 }
-
-
-
-
+.study{
+    color: #D16210;
+    font-weight: bold;
+}
 .exp{
-    background-color: #D1DCE6;
+    background-color: #F8CBAB;
+    padding-bottom: 40px;
+}
 
-}
-.edu{
-    height: 70vh;
-    background-size: cover;
-}
-footer{
-    height: 60px;
-    background-color: #D1DCE6;
-}
 /*-------------*WELCOME------------*/
 h1{
-    font-family: 'Nanum Myeongjo', serif;
-    border-bottom: 1px solid;
+    font-family: 'Gotu', sans-serif;
     margin: auto;
     width: 50%;
+    padding-bottom: 50px;
     justify-content: center;
     text-align: center;
     font-weight: lighter;
@@ -63,35 +60,35 @@ h1{
 }
 h2{
     font-weight: lighter;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Gotu', sans-serif;;
 }
-
 .about_me{
     text-align: center;
     line-height: 25px;
-    padding: 18% 18% 150px;
+    padding: 10% 10% 150px;
 }
 .about_me h2{
     font-size: 3rem;
     margin-bottom: 50px;
 }
 button{
+    margin-right: 20px;
     margin-top: 60px;
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-    background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    /*border-radius:42px;*/
-    border:1px solid #dcdcdc;
+    border:1px solid #D16210;
+    border-radius: 30px;
+    background-color: transparent;
     display:inline-block;
     cursor:pointer;
-    color:#666666;
-    font-size:17px;
+    color: #D16210;
+    font-size:18px;
     font-weight:bold;
-    padding:11px 24px;
+    padding:9px 20px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
 }
 button:hover {
-    background: #f6f6f6 linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    color: #422815;
+    border:1px solid #422815;
+
 }
 button:active {
     position:relative;
@@ -100,14 +97,13 @@ button:active {
 .left button{
     margin-top: 20px;
 }
-
 .left .container p{
     font-size: 1.3rem;
 
 }
-
 .left .container h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 .welcome{
     margin-top: -15px;
@@ -117,46 +113,156 @@ button:active {
     justify-content: center;
 }
 a img{
-    margin: 30px 17px ;
+    margin: 15px 17px ;
     height: 40px;
 }
 
 /*--------------SKILLS-------------------*/
-.skills .skills-title h1{
+.title h1{
     border-bottom: none;
     justify-content: left;
     text-align: left;
     width: 100%;
 }
-.skills .skills-title{
+.title{
     padding-left: 15%;
 }
 .skills{
     padding-top: 70px; 
-    padding-bottom: 100px;
-    background-size: cover;
+    padding-bottom: 20px;
+    background-color: #FFF4EB;
     display: flex;
 }
-.skills .skills-list-col{
-    padding-left: 15%;
+.skills .two-column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    padding-left: 10%;
+    margin-left: 60px;
 }
-.skills .skills-list-col h4{
+.skills .two-column .list-col{
+
+}
+.skills .two-column .list-col h4{
+    padding-top: 1.5rem;
     font-size: 1.5rem;
     font-weight: bolder;
 }
-.skills .skills-list-col li{
+.skills .two-column .list-col li{
     list-style: none;
     padding-top: 1.5rem;
-
-
 }
-.skills .skills-list-col li p{
+.skills .two-column .list-col li p{
     display: inline-block;
     padding-left: 25px;
     vertical-align: middle;
 }
-.skills .skills-list-col li img{
+.skills .two-column .list-col li img{
     vertical-align: middle;
 }
 
 /*-------------------EDU-----------------*/
+.edu {
+    background-color: #FFF4EB;
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.edu .list-col{
+    padding-left: 5%;
+}
+.edu .list-col li{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+
+}
+.edu .list-col li p{
+    width: 170px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: #D16210;
+    font-weight: bold;
+    font-family: 'Gotu', sans-serif;;
+
+}
+.edu .list-col li h4{
+    font-size: 1.4rem;
+}
+.edu .list-col li h5{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.edu .list-col li h6{
+    font-size: 1rem;
+}
+footer{
+    background-color:#422815;
+}
+footer p{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+/*------------MEDIA QUERIES----------------*/
+@media(max-width: 768px){
+    /*----------ABOUTME--------*/
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left{
+        padding-left: 0;
+        padding-top: 100px;
+    }
+    .right{
+        padding-right: 0;
+    }
+    .column{
+        height: auto;
+    }
+    button{
+        margin-top: 20px;
+    }
+    .about_me{
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    /*-------------SKILLS--------------*/
+    .skills{
+        display: block;
+        padding: 30px 0 0;
+    }
+    .skills .title h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .skills .title{
+        padding: 0;
+    }
+    .skills .two-column {
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 0 0 10%;
+    }
+    /*----------------EDU---------------*/
+    .edu{
+        display: block;
+        padding: 30px 0 0;
+    }
+    .edu .title{
+        padding: 0;
+    }
+    .edu .title h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .edu .list-col{
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 0 0 15%;
+    }
+
+
+}
