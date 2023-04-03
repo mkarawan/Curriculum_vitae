@@ -8,7 +8,7 @@ header{
     position: fixed;
     top:0; left: 0; right: 0;
     background: #422815;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0px 0px 3px 1px rgba(66, 40, 21, 0.4);
     padding: 12px 7%;
     display: flex;
     align-items: center;
@@ -27,9 +27,12 @@ header .navbar ul li{
 }
 
 header .navbar ul li a{
+    text-transform: uppercase;
+
+    font-weight: bold;
     font-size: 15px;
-    padding-left: 30px;
-    color:white;
+    padding-left: 70px;
+    color: #FFF4EB;
     display: block;
 
 }
@@ -48,8 +51,11 @@ header .navbar ul li:hover > ul{
     display: none;
 }
 header label{
+    text-transform: uppercase;
+    font-family: 'Gotu', sans-serif;
+    font-weight: bold;
     font-size:15px;
-    color: white;
+    color: #FFF4EB;
     cursor: pointer;
     display:none;
 }
@@ -67,6 +73,7 @@ header label{
         background: #422815;
         border-top:1px solid rgba(0,0,0,.1);
         display:none;
+        box-shadow: 0px 0px 3px 1px rgba(66, 40, 21, 0.4);
     }
     header .navbar ul li{
         width: 100%;
