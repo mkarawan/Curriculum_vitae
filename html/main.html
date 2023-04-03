@@ -13,29 +13,35 @@
     <link rel="stylesheet" href="/style/css/navbar.css" />
     <link rel="stylesheet" href="/style/css/style.css" />
     <link rel="stylesheet" href="/style/css/exp.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>🐍🐍🐍🐍🐍🐍</title>
 </head>
 <body>
 
-        <!------------------- NAVBAR --------------------->
-        <header>
+<!------------------- NAVBAR --------------------->
+        <header class="nav">
             <p></p>
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a>Start</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Education</a></li>
-                    <li><a>Experience</a></li>
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Experience</a></li>
 
                 </ul>
             </nav>
         </header>
 
-        <!------------------- END OF NAVBAR --------------------->
-    <!-------------------- WELCOME --------------->
-    <section class="welcome">
+<!------------------- END OF NAVBAR --------------------->
+<!-------------------- WELCOME --------------->
+    <section class="welcome" id="start">
+        <div class="fade" data-aos="zoom-out"
+             data-aos-offset="200"
+             data-aos-delay="270"
+             data-aos-duration="1000"
+             data-aos-once="true">
         <div class="grid">
             <div class="left column">
                 <div class="container">
@@ -44,8 +50,10 @@
                     <p class="study">Computer Science Student</p>
 
                     <div class="social_media">
-                        <a href="https://github.com/mkarawan" /><img src="/style/images/git.png" alt="github-link" ></a>
-                        <a href="https://www.linkedin.com/in/mkarawan/"><img src="/style/images/in.png" alt="linkedin-link"></a>
+                        <a href="https://github.com/mkarawan" /><img src="/style/images/github.png" onmouseover="this.src='/style/images/orange-02.png'"
+                    onmouseout="this.src='/style/images/github.png'"/></a>
+                        <a href="https://www.linkedin.com/in/mkarawan/"><img src="/style/images/linkedinn.png" onmouseover="this.src='/style/images/link-or.png'"
+                    onmouseout="this.src='/style/images/linkedinn.png'" /></a>
                     </div>
                 </div>
             </div>
@@ -60,11 +68,16 @@
             </div>
 
         </div>
-        </div>
+        </div></div>
     </section>
 
 <!------------------------SKILLS------------------------>
-    <div class="skills">
+    <div class="skills" id="skill" >
+        <div class="fade" data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="70"
+             data-aos-duration="1000"
+             data-aos-once="true">
         <div class="title">
     <h1>Skills</h1>
         </div>
@@ -72,40 +85,63 @@
         <div class="list-col">
             <h4>Technical</h4>
             <ol>
-                <li><img src="../style/images/programming-language.png" height="40" width="40"/><p>HTML</p></li>
-                <li><img src="../style/images/css.png"  height="40" width="40"/><p>CSS</p></li>
-                <li><img src="../style/images/python (1).png"  height="40" width="40"/><p>Python, Django</p></li>
-                <li><img src="../style/images/sql-server.png"  height="40" width="40"/><p>SQL</p></li>
-            <li><img src="../style/images/programming-language (1).png"  height="40" width="40"/><p>MS Office</p></li>
+                <li data-aos="slide-up"
+                    data-aos-once="true"
+                    data-aos-delay="50"><img src="../style/images/htmll.png" height="40" width="40"/><p>HTML</p></li>
+                <li data-aos="slide-up" data-aos-delay="50"
+                    data-aos-once="true"><img src="../style/images/csss.png"  height="40" width="40"/><p>CSS</p></li>
+                <li data-aos="slide-up" data-aos-delay="50"
+                    data-aos-once="true"><img src="../style/images/pytho.png"  height="40" width="40"/><p>Python, Django</p></li>
+                <li data-aos="slide-up" data-aos-delay="50"
+                    data-aos-once="true"><img src="../style/images/db.png"  height="40" width="40"/><p>SQL</p></li>
+                <li data-aos="slide-up" data-aos-delay="50"
+                    data-aos-once="true"><img src="../style/images/msof.png"  height="40" width="40"/><p>MS Office</p></li>
             </ol>
         </div>
         <div class="list-col">
             <h4>Soft</h4>
             <ol>
-            <li><img src="../style/images/listening-icon-17.jpg"  height="40" width="40"/><p>Active listening</p></li>
-            <li><img src="../style/images/puzzle.png"  height="40" width="40"/><p>Problem solving</p></li>
-            <li><img src="../style/images/work.png"  height="40" width="40"/><p>Work motivation</p></li>
-            <li><img src="../style/images/library.png" height="40" width="40"/><p>English - B1</p></li>
+            <li data-aos="slide-up" data-aos-delay="50"
+                data-aos-once="true"><img src="../style/images/listen.png"  height="40" width="40"/><p>Active listening</p></li>
+            <li data-aos="slide-up" data-aos-delay="50"
+                data-aos-once="true"><img src="../style/images/puzzlee.png"  height="40" width="40"/><p>Problem solving</p></li>
+            <li data-aos="slide-up" data-aos-delay="50"
+                data-aos-once="true"><img src="../style/images/work.png"  height="40" width="40"/><p>Work motivation</p></li>
+            <li data-aos="slide-up" data-aos-delay="50"
+                data-aos-once="true"><img src="../style/images/eng.png" height="40" width="40"/><p>English - B1</p></li>
             </ol>
         </div></div>
-
+           </div>
     </div>
-        <div class="edu">
+<!--------------------------------------EDU-------------------->
+    <div class="edu" id="education">
+        <div class="fade" data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="70"
+             data-aos-duration="1000"
+             data-aos-once="true">
             <div class="title">
                 <h1>Education</h1>
             </div>
             <div class="list-col">
-                <li><p>10.2020 - 02.2024</p><h4>Computer Science</h4></li>
+                <li><p class="date">10.2020 - 02.2024</p><h4>Computer Science</h4></li>
                 <li><p></p><h5>Mobile application engineer</h5></li>
                 <li><p></p><h6>WSB Universities in Wrocław</h6></li>
-                <li><p>02.2022 - 05.2022</p><h4>Python Developer Course</h4></li>
+                <li><p class="date">02.2022 - 05.2022</p><h4>Python Developer Course</h4></li>
                 <li><p></p><h6>CodersLab - IT school</h6></li>
             </div>
         </div>
+        </div>
 <!--------------------------EXPERIENCE ------------------------>
-    <div class="exp">
+    <div class="exp" id="work">
 
-            <h1>Experience</h1>
+
+            <h1 data-aos="fade-up" data-aos-once="true">Experience</h1>
+        <div class="fade" data-aos="zoom-in"
+             data-aos-offset="200"
+             data-aos-delay="70"
+             data-aos-duration="1000"
+             data-aos-once="true">
         <div class="timeline-section">
             <div class="timeline-items">
                 <div class="timeline-item">
@@ -143,10 +179,8 @@
                         <p>Taking care of exposition of goods</p>
                         <p>Active selling</p></div></div></div>
         </div>
-
+        </div>
     </div>
-<!--------------------EDUCATION ----------------------------->
-
 <!-----------------FOOTER-------------------------->
 <footer>
 <br />
@@ -154,5 +188,22 @@
     <p>All icons made by me</p>
     <br />
 </footer>
-</body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            let prevScrollPos = window.scrollY;
+
+            window.onscroll = function() {
+                const currentScrollPos = window.scrollY;
+                if (prevScrollPos > currentScrollPos) {
+                    document.querySelector(".nav").style.top = "0";
+                } else {
+                    document.querySelector(".nav").style.top = "-50px";
+                }
+                prevScrollPos = currentScrollPos;
+            }
+        </script>
+    </body>
 </html>
