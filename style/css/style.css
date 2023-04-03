@@ -395,8 +395,8 @@ footer p{
         width: 250px;
     }
     .fade .grid .left .container{
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .skills .fade .two-column .list-col ol{
         width: 70%;
