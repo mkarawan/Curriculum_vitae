@@ -25,11 +25,11 @@ body{
 .fade .right{
     background-color: #F8CBAB;
     display: flex;
-    padding-right: 20%;
+    padding-right: 10vw;
     padding-top: 10%;
 }
 .fade .left{
-    padding-left: 120px;
+    padding-left: 8vw;
     background-color: #F8CBAB;
     display: flex;
     text-align: center;
@@ -42,7 +42,7 @@ body{
     vertical-align: middle;
 }
 .fade .left .container img.photo_of_me{
-    width: 215px;
+    width: 300px;
     border-radius: 50%;
 }
 .column{
@@ -56,6 +56,10 @@ body{
     background-color: #F8CBAB;
     padding-bottom: 40px;
 }
+.fade .right .about_me p{
+    font-size: 22px;
+    line-height: 30px;
+}
 /*-------------*WELCOME------------*/
 h1{
     font-family: 'Gotu', sans-serif;
@@ -65,7 +69,7 @@ h1{
     justify-content: center;
     text-align: center;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 3.75rem;
 }
 h2{
     font-weight: lighter;
@@ -74,10 +78,10 @@ h2{
 .about_me{
     text-align: center;
     line-height: 25px;
-    padding: 10% 10% 150px;
+    padding: 4% 3% 150px;
 }
 .about_me h2{
-    font-size: 3rem;
+    font-size: 3.75rem;
     margin-bottom: 50px;
 }
 button{
@@ -89,15 +93,20 @@ button{
     display:inline-block;
     cursor:pointer;
     color: #D16210;
-    font-size:18px;
+    font-size:22px;
     font-weight:bold;
     padding:9px 20px;
     text-decoration:none;
 }
+button a{
+    color: #D16210;
+}
 button:hover {
     color: #422815;
     border:1px solid #422815;
-
+}
+button a:hover{
+    color: #422815;
 }
 button:active {
     position:relative;
@@ -107,11 +116,11 @@ button:active {
     margin-top: 20px;
 }
 .left .container p{
-    font-size: 1.3rem;
+    font-size: 1.625rem;
 
 }
 .left .container h2{
-    font-size: 2.5rem;
+    font-size: 3.125rem;
     margin-bottom: 15px;
 }
 .welcome{
@@ -120,11 +129,12 @@ button:active {
 .left .container .social_media{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 .left .container .social_media a img{
-    margin: 15px 5px ;
-    height: 45px;
-    width: 45px;
+    margin: 20px 10px ;
+    height: 55px;
+    width: 55px;
 
 }
 
@@ -158,7 +168,7 @@ button:active {
 }
 .skills .fade .two-column .list-col h4{
     padding-top: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
 .skills .fade .two-column .list-col li{
@@ -169,9 +179,11 @@ button:active {
     display: inline-block;
     padding-left: 25px;
     vertical-align: middle;
+    font-size: 22px;
 }
 .skills .fade .two-column .list-col li img{
     vertical-align: middle;
+
 }
 /*-------------------EDU-----------------*/
 .edu{
@@ -192,23 +204,23 @@ button:active {
 
 }
 .edu .fade .list-col li p{
-    min-width: 170px;
+    min-width: 210px;
     padding-right: 20px;
-    font-size: 18px;
+    font-size: 22px;
     color: #D16210;
     font-weight: bold;
     font-family: 'Gotu', sans-serif;;
 
 }
 .edu .fade .list-col li h4{
-    font-size: 1.4rem;
+    font-size: 1.75rem;
 }
 .edu .fade .list-col li h5{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 .edu .fade .list-col li h6{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 footer{
     background-color:#422815;
@@ -218,17 +230,58 @@ footer p{
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 15px;
 }
 /*------------MEDIA QUERIES----------------*/
+
 @media(max-width: 1131px){
     button{
         margin-top: 15px;
     }
+    .fade .right {
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 15% ;
+    }
+    .edu .fade .list-col{
+        padding-left: 15%;
+    }
+    .edu .fade .list-col li{
+
+        display: block;
+        padding: 0 0 40px 0;
+    }
+    .edu .fade .list-col li p.date{
+        padding: 30px 0 30px 0;
+    }
 }
-@media(max-width: 975px) {
+@media(max-width: 990px) {
+    h2{
+        line-height: 50px;
+        font-size: 2.8rem;
+        padding-top: 15px;
+    }
     .title{
         padding-left: 5%;
+    }
+    .fade .right {
+        padding-left: 5vw;
+        padding-top: 25%;
+    }
+    .fade .left{
+        padding-left: 5vw;
+    }
+    .skills .fade .two-column{
+        margin-left: 0;
+    }
+    .skills .fade .title{
+        padding-left: 8%;
+    }
+    .edu .fade .title{
+        padding-left: 8%;
+    }
+    .edu .fade .list-col{
+        padding-left: 10%;
     }
 
 }
@@ -243,6 +296,7 @@ footer p{
     }
     .fade .right{
         padding-right: 0;
+        padding-top: 1.5vh;
     }
     .fade .column{
         height: auto;
@@ -269,8 +323,9 @@ footer p{
     .skills .fade .two-column {
         justify-content: center;
         margin: 0 auto;
-        padding: 0 0 0 10%;
+        padding: 0 0 0 5%;
     }
+
     /*----------------EDU---------------*/
     .edu .fade{
         display: block;
@@ -288,30 +343,6 @@ footer p{
         margin: 0 auto;
         padding: 0 10% 0 10%;
     }
-
-
-}
-@media(max-width: 480px){
-    .skills .fade .two-column{
-        grid-template-columns: repeat(1,1fr);
-        padding: 0;
-        margin: 0 auto;
-    }
-    .skills .fade .two-column .list-col h4{
-        margin: 0;
-        text-align: center;
-    }
-    .skills .fade .two-column .list-col ol{
-        padding-left: 30%;
-    }
-    h1{
-        font-size: 2.5rem;
-    }
-    .skills .fade .two-column .list-col ol p{
-        padding-left: 15px;
-    }
-}
-@media(max-width: 585px){
     .edu .fade .list-col li{
         text-align: center;
         display: block;
@@ -325,26 +356,74 @@ footer p{
         margin: 0 auto;
         padding: 0 10% 0 10%;
     }
+
 }
-@media(max-width: 348px) {
+@media(max-width: 591px) {
+    .skills .fade .two-column{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+        margin: 0 auto;
+    }
+    .skills .fade .two-column .list-col h4{
+        margin: 0;
+        text-align: center;
+    }
     .skills .fade .two-column .list-col ol{
-        padding-left: 10%;
+        width: 60%;
+        margin: auto;
     }
-    .fade .about_me h2{
-        font-size: 2.5rem;
-        line-height: 30px;
+    h1{
+        font-size: 2.9rem;
     }
-    .fade .left h2{
-        font-size: 2.5rem;
-        line-height: 30px;
-        padding: 30px 0 30px 0;
+    .skills .fade .two-column .list-col ol p{
+        padding-left: 15px;
     }
 
 }
-@media(max-width: 259px) {
-    .skills .fade .two-column .list-col ol li p{
-        font-size: 0.8rem;
-        padding-left: 5px;
+@media(max-width: 480px){
+    .fade .about_me h2{
+        font-size: 2.9rem;
+        line-height: 30px;
+    }
+    .fade .left h2{
+        font-size: 2.9rem;
+        line-height: 40px;
+        padding: 30px 0 30px 0;
+    }
+    .fade .grid .left .container .photo_of_me{
+        width: 250px;
+    }
+    .skills .fade .two-column .list-col ol{
+        width: 70%;
+        margin: auto;
+    }
+    .skills .fade .two-column .list-col ol p{
+        font-size: 20px;
+    }
+    .fade .right .about_me p{
+        font-size: 20px;
+    }
+    .edu .fade .list-col li h4{
+        font-size: 1.5rem;
+    }
+    .edu .fade .list-col li h5{
+        font-size: 1.2rem;
+    }
+    .edu .fade .list-col li h6{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 380px) {
+
+
+    .skills .fade .two-column .list-col ol{
+        width: 80%;
+    }
+}
+@media(max-width: 336px) {
+    .skills .fade .two-column .list-col ol{
+        width: 95%;
     }
 
 }
